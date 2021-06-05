@@ -1,0 +1,372 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3d3d3d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+:root {
+  --hue: 220;
+  --sat: 100;
+  --light: 81;
+}
+
+.ct-section {
+  background-image: url("../assets/wallmartBG.png");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+
+  .dropdown {
+    //background-color: red;
+
+    margin-top: 3%;
+    width: 30%;
+    margin-left: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .item_list_btn {
+      outline: none;
+      background-color: white;
+
+      border: 2px solid #2b2b2b;
+
+      position: fixed;
+
+      height: 40px;
+      width: 12%;
+      border-radius: 50px;
+
+      font-weight: bold;
+      font-size: 14px;
+
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      } &:active {
+          transform: scale(1);
+        }
+
+    }
+
+
+
+  }
+
+  .title {
+    //background-color: red;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+  }
+
+  .center_of_items {
+    //background-color: red;
+    //height: 100%;
+    width: 70%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 300px);
+    grid-gap: 10px;
+    grid-row-gap: 40px;
+
+  }
+
+
+}
+
+
+
+.center_of_windows {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  //background-color: red;
+
+  .product_title {
+    color: white;
+    font-weight: bold;
+
+    margin-bottom: 2%;
+
+    text-align: center;
+    width: 70%;
+  }
+
+  .window {
+    background-color: white;
+    height: 100%;
+    width: 90%;
+
+    border-radius: 20px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    transition: all 0.2s ease-in-out;
+
+    .hide {
+      display: flex;
+      border-radius: 20px;
+
+      height: 100%;
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      background-color: rgba(0,0,0 , 0.25);
+
+      .buy {
+        outline: none;
+        border: none;
+
+        color: white;
+        background-color: black;
+
+        height: 10%;
+        width: 40%;
+
+        border-radius: 60px;
+
+        font-size: 13px;
+        font-weight: bold;
+
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(1);
+        }
+      }
+
+      .price {
+        color: white;
+      }
+
+    }
+
+  }
+
+
+  .window .hide {
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+  }
+
+  .window:hover .hide {
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+
+  }
+
+  transition: all 0.2s ease-in-out;
+
+}
+
+.wrapper-wrapper {
+
+  background-color: #2b2b2b;
+
+  display: grid;
+  grid-template-rows: repeat(7, 300px);
+
+
+  background-image: url("../assets/Web 1920 – 1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+
+
+
+    .acc-title {
+      //background-color: red;
+      height: 20%;
+      margin-bottom: 5%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: white;
+      font-size: 80px;
+      font-weight: bold;
+    }
+
+    .under_title {
+      height: 5%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+
+      margin-bottom: 5%;
+    }
+
+    .items {
+      //background-color: yellow;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .item {
+      background-color: rgba(255, 255, 255, .15);
+      backdrop-filter: blur(10px);
+
+      border-radius: 15px;
+
+      color: white;
+      height: 6vh;
+      width: 60%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      margin-bottom: 2%;
+
+      button {
+        outline: none;
+        background-color: white;
+        border: none;
+
+        height: 40px;
+        width: 42px;
+        border-radius: 100px;
+
+        font-weight: bold;
+        font-size: 14px;
+
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        } &:active {
+            transform: scale(1);
+          }
+
+        margin-right: 2%;
+      }
+
+
+
+      .img_cover {
+        height: 100%;
+        width: 6%;
+        margin-left: 5%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+          background-color: white;
+          height: 80%;
+          width: 80%;
+
+          background-size: cover;
+          background-position: center;
+
+          border-radius: 10px;
+
+        }
+      }
+
+      .name {
+        margin-left: 6%;
+        width: 65%;
+        font-weight: bold;
+
+        text-align: justify;
+        text-justify: distribute-all-lines;
+
+      }
+
+      .price {
+        font-weight: bold;
+        margin-right: 2%;
+        margin-left: 2%;
+        float: right;
+        position: relative;
+        width: 8%;
+      }
+    }
+
+    .confirm_buy {
+      outline: none;
+      background-color: white;
+
+      border: 2px solid #2b2b2b;
+
+      height: 40px;
+      width: 12%;
+      border-radius: 50px;
+
+      font-weight: bold;
+      font-size: 14px;
+
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      } &:active {
+          transform: scale(1);
+        }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
